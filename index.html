@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakanda Training Institute Student Portal</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+	h2 {
+            color: #0066cc; /* Blue color for main heading */
+            font-size: 24px;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #333; /* Dark gray for subheadings */
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #555; /* Gray color for paragraphs */
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #444; /* Dark gray for list items */
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .important {
+            color: #e60000; /* Red for important text */
+            font-weight: bold;
+        }
+
+
+        .side-panel {
+	position: absolute;
+            width:400px;
+	height:800px;
+            background: linear-gradient(to bottom, #87CEFA, #00BFFF);
+            color: black;
+            padding: 20px;
+        }
+
+        .main-panel {
+	margin-left: 450px;
+            flex-grow: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+	.main-header h1 {
+   	 margin: 0;
+    text-align: center; 
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 24px;
+}
+
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .main-header h1 {
+            margin: 0;
+        }
+
+        .logo img {
+            width: 250px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .nav-bar {
+    background-color: transparent;
+    border-bottom: 2px solid #444;     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav-bar a {
+    color: #444; 
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px; 
+    transition: background-color 0.3s, color 0.3s; }
+
+.nav-bar a:hover {
+    background-color:  blue;
+    color: white;
+}
+
+.inner-panel {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px;
+    margin: auto;
+}
+
+h3 {
+    color: #0066cc;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    margin-right: 2px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 2px solid #ccc; /* Border lines */
+    background-color: transparent; /* Remove background */
+    border-radius: 5px; /* Slightly rounded corners for border lines */
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Adjust width to be full within container */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.form-group input:focus {
+    border-color: #0066cc; /* Focus border color */
+}
+
+.btn {
+    padding: 12px;
+margin-left: 180px;
+width: 300px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+}
+
+/* Responsi
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="side-panel">
+<h2>LOGIN INSTRUCTIONS</h2>
+    <h3>USERNAME :</h3>
+    <p>Your login username in this case is your full registration number, for example ABBQ/00001/2017 or 113/00001.</p>
+
+    <h3>PASSWORD :</h3>
+    <p>Login password is as follows:-</p>
+    <ul>
+        <li>Initial/default password for KUCCPS/Module I students is KCSE full index number like 01234567891/2016. However, this changes to your birth certificate/passport/national ID number immediately you update your profile.</li>
+        <li>Initial/default password for Module II/Self-sponsored students is what was entered as national ID number when applying online.</li>
+        <li>Once you update your profile, your password becomes your ID/Passport/Birth certificate number and it will change ONLY when you reset it to a new password.</li>
+    </ul>
+
+    <h3 class="important">YOU ARE STRONGLY ADVISED TO CHANGE YOUR DEFAULT PASSWORD AFTER LOGGING IN TO YOUR PORTAL</h3>
+    </div>
+    <div class="main-panel">
+        <div class="main-header">
+            
+            <div class="logo">
+                <!-- Add your logo image here -->
+                <img src="C:\Users\ebara\OneDrive\Pictures\Screenshots\Screenshot 2024-12-27 070822.png" alt="Wakanda Training Logo">
+            </div>
+<h1>Student Online Portal</h1>
+        </div>
+
+        <div class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Students</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="inner-panel">
+    <h3>LOGIN IN AS STUDENT</h3>
+    <p>This is a login page for registered students only (prospective students have to be admitted first before they can access the portal). Applicants should log in at the Online Application Portal. 2020 prospective students to complete their pre-admission process and obtain admission letters using this link.</p>
+
+    <form action="#">
+        <div class="form-group">
+            <label for="username">Username *</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn">Log into the Portal</button>
+    </form>
+
+    </div>
+</div>
+</body>
+</html>
